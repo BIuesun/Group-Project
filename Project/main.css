@@ -1,0 +1,34 @@
+body {
+    background-image: url("./creepy-girl-dark-anime-aesthetic-desktop-vwa3s4j416qm1w8j.jpg");
+    background-repeat: no-repeat;
+    color: white;
+
+}   
+
+#solo {
+ width: 234px; height: 370px
+}
+
+h1 {
+    text-align: center;
+}
+
+/* კონტეინერი რომ არ გადავიდეს ხსვა სურათებზე */
+a {
+    display: inline-block; /* უზრუნველყობს რომ <a> თეგი ბლოკად გადაიქცეს margin კონტროლისთვის*/
+    margin: 10px; /* ამატებს ადგილს სურათებს შორის */
+    position: relative; /*იმისთვის რომ სურათი თავის საზღვრებს იქით არ გავიდეს */
+}
+
+/* სურათზე hover ეფექტი */
+img {
+    transition: transform 0.3s ease; /* Smooth გადასვლა ჰოვერზე*/
+    transform-origin: center; /* scaling ეფექტის გასაცენტრად */
+    position: relative; /*  უზრუნველყობს რომ ზომა შეცვლილმა სურათმა არ იმოძრაოს */
+    z-index: 1; /* hovered სურათების ერთმანეთზე გასაჩერებლად*/
+}
+
+img:hover {
+    transform: scale(1.1); /* დაახლოება ჰოვერის დროს(zoom) */
+    z-index: 10; /* უზრუნველყობს რომ ჰოვერედ სურათები ერთმანეთის ზევით იყოს */
+}

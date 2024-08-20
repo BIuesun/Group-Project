@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    color: aliceblue;
+}
+
+body{
+    background-image: url("thumb-1920-495521.jpg");
+    background-repeat: no-repeat;
+}
+
+.content2 {
+    display: flex;
+    align-items: flex-start; 
+    color: aliceblue;
+}
+
+
+.content2 img {
+    max-width: 100%; 
+    height: auto;
+    width: 300px;
+}
+
+p {
+    font-size: large;
+}
+
+#haj {
+    color: white; text-align: center; font-size: 50px;
+}
